@@ -225,20 +225,30 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  /*flex-wrap: wrap;*/
 }
 
 .feature {
+ /* display: inline-flex;*/
   flex: 1;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  /*height: 39.6875rem;*/
+  max-height: 39.6875rem;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+.feature .content {
+  padding-top: 2.5rem;
 }
 
 .feature h2 {
@@ -289,7 +299,9 @@ header .mobile {
 
 #filters-section .content {
   padding: 0 .625rem;
-  margin-bottom: 5rem;
+  margin: 0 auto 5rem auto;
+  max-width: 35rem;
+
 }
 
 #filters-section .content h2 {
@@ -308,6 +320,10 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section img {
+  /*display: inline-block;*/
 }
 
 @media only screen and (max-width: 760px) {
